@@ -1,0 +1,5 @@
+Options +FollowSymLinks -MultiViews -indexes
+RewriteEngine On
+RewriteRule ^([a-z]+)$ redir.php?go=$1&model=$2&id=$3 [NC,L]
+RewriteRule ^([a-z]+)\/([a-z]+)$ redir.php?go=$1&par=$2 [NC,L]
+RewriteRule ^([a-z]+)\/([a-z]+)\/([0-9]+)$ nada.php?go=$1&model=$2&id=$3 [NC,L]
